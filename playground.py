@@ -42,3 +42,8 @@ finance_agent = Agent(
     show_tools_calls=True,
     markdown=True
 )
+
+app = Playground([finance_agent, web_search_agent]).get_app()
+
+if __name__ == '__main__':
+    serve_playground_app('playground:app', reload=True)
