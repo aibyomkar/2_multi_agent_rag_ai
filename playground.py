@@ -14,6 +14,9 @@ load_dotenv()
 
 phi.api = os.getenv("PHI_API_KEY")
 
+# Initialize Groq model (LLaMA2-70B)
+groq_model = Groq(id="llama3-70b-8192", api_key=os.getenv("GROQ_API_KEY"))
+
 web_search_agent = Agent(
     name="Web Search Agent",
     role='Search the web for the information',
