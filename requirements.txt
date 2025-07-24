@@ -11,4 +11,3 @@ sqlalchemy
 pgvector
 psycopg[binary]
 pypdf
-sentence-transformers
